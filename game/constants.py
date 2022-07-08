@@ -1,3 +1,5 @@
+from game.casting.color import Color
+
 # GAME
 GAME_NAME = "Portal Rush"
 FRAME_RATE = 60 #Changes the smoothness of the game.
