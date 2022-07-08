@@ -26,6 +26,11 @@ ALIGN_CENTER = 0
 ALIGN_LEFT = 1
 ALIGN_RIGHT = 2
 
+# COLORS
+BLACK = Color(0, 0, 0)
+WHITE = Color(255, 255, 255)
+PURPLE = Color(255, 0, 255)
+
 # KEYS
 LEFT = "left"
 RIGHT = "right"
@@ -33,6 +38,12 @@ SPACE = "space"
 ESCAPE = "escape"
 PAUSE = "enter"
 
+# SCENES
+NEW_GAME = 0
+TRY_AGAIN = 1
+NEXT_LEVEL = 2
+IN_PLAY = 3
+GAME_OVER = 4
 
 # LEVELS
 LEVEL_FILE = "To be Updated"
