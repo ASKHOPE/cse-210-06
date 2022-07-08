@@ -9,14 +9,14 @@ CENTER_X = SCREEN_WIDTH / 2
 CENTER_Y = SCREEN_HEIGHT / 2
 
 # FONT
-FONT_FILE = "To be Updated"
+FONT_FILE = "cse-210-06/assets/fonts/zorque.otf"
 FONT_SMALL = 32
 FONT_LARGE = 48
 
 # SOUND
-COLLIDE_SOUND = "To be Updated"
-WELCOME_SOUND = "To be Updated"
-OVER_SOUND = "To be Updated"
+COLLIDE_SOUND = "cse-210-06/assets/sounds/boing.wav"
+WELCOME_SOUND = "cse-210-06/assets/sounds/start.wav"
+OVER_SOUND = "cse-210-06/assets/sounds/over.wav"
 
 
 # TEXT
@@ -69,14 +69,14 @@ SCORE_FORMAT = "SCORE: {}"
 
 # Player (Espiritu)
 ESPIRITU_GROUP = "espiritu"
-ESPIRITU_IMAGE = "To be Updated"
+ESPIRITU_IMAGE = "cse-210-06/assets/images/player.png"
 ESPIRITU_WIDTH = 28
 ESPIRITU_HEIGHT = 28
 ESPIRITU_VELOCITY = 6
 
 # Chaser (Reaper)
 REAPER_GROUP = "reaper"
-REAPER_IMAGES = "To be Updated"
+REAPER_IMAGES = "cse-210-06/assets/images/reaper.png"
 REAPER_WIDTH = 106
 REAPER_HEIGHT = 28
 REAPER_RATE = 6
