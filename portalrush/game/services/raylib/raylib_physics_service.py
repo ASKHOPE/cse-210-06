@@ -8,11 +8,21 @@ class RaylibPhysicsService(PhysicsService):
         pass
         
     def has_collided(self, subject, agent):
+        """define the collision
+        
+        Args:
+            Control the collision with obstacle
+        """
         subject_rectangle = self._get_rectangle(subject)
         agent_rectangle = self._get_rectangle(agent)
         return pyray.check_collision_recs(subject_rectangle, agent_rectangle)
 
     def is_above(self, subject, agent):
+        """define the move
+        
+        Args:
+            Control the actor to go above the obstacle
+        """
         subject_rectangle = self._get_rectangle(subject)
         agent_rectangle = self._get_rectangle(agent)
         collision_rectangle = pyray.get_collision_rec(subject_rectangle, agent_rectangle)
@@ -21,6 +31,11 @@ class RaylibPhysicsService(PhysicsService):
         return subject_rectangle_bottom == collision_rectangle_bottom
 
     def is_below(self, subject, agent):
+        """define the move
+        
+        Args:
+            Control the actor to go below the obstacle
+        """
         subject_rectangle = self._get_rectangle(subject)
         agent_rectangle = self._get_rectangle(agent)
         collision_rectangle = pyray.get_collision_rec(subject_rectangle, agent_rectangle)
@@ -29,6 +44,11 @@ class RaylibPhysicsService(PhysicsService):
         return subject_rectangle_top == collision_rectangle_top
 
     def is_left_of(self, subject, agent):
+        """define the move
+        
+        Args:
+            Control the actor to go left of the obstacle
+        """
         subject_rectangle = self._get_rectangle(subject)
         agent_rectangle = self._get_rectangle(agent)
         collision_rectangle = pyray.get_collision_rec(subject_rectangle, agent_rectangle)
@@ -37,6 +57,11 @@ class RaylibPhysicsService(PhysicsService):
         return subject_rectangle_right == collision_rectangle_right
 
     def is_right_of(self, subject, agent):
+        """define the move
+        
+        Args:
+            Control the actor to go right the obstacle
+        """
         subject_rectangle = self._get_rectangle(subject)
         agent_rectangle = self._get_rectangle(agent)
         collision_rectangle = pyray.get_collision_rec(subject_rectangle, agent_rectangle)
@@ -45,6 +70,11 @@ class RaylibPhysicsService(PhysicsService):
         return subject_rectangle_left == collision_rectangle_left
 
     def _get_rectangle(self, body):
+        """Draws a rectangle
+        
+        Args:
+            size and position to draw.
+        """
         top = body.get_position().get_y()
         left = body.get_position().get_x()
         width = body.get_size().get_x()
