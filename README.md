@@ -38,12 +38,16 @@ root
 
 ## Screenshots
 
+Welcome Screen
 [![Welcome-Screen.png](https://i.postimg.cc/nczL5vnk/Welcome-Screen.png)](https://postimg.cc/Yj5kLLGG)
 
+Loading Screen
 [![Launch-Screen.png](https://i.postimg.cc/j28S2j4P/Launch-Screen.png)](https://postimg.cc/WqkvfTK1)
 
+Gameplay
 [![Game-Play-Screen.png](https://i.postimg.cc/HnWLTMXT/Game-Play-Screen.png)](https://postimg.cc/G8NRQHXf)
 
+Game Over
 [![Game-Over-Screen.png](https://i.postimg.cc/mZVD8dWk/Game-Over-Screen.png)](https://postimg.cc/rz0MpNm2)
 
 ## Authors & Contributions
