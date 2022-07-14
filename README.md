@@ -1,7 +1,7 @@
 # PORTAL RUSH GAME BYUI-CSE-210-06
 
 # Rules
-Portal Rush is played according to the following rules. The player can jump up using Space Key and A and D or Left and Right Arrow Keys to move foward and backward. Players try to maneuver far away from the Reaper so he won't come closer and snatch our player's soul. If a player collides with the obstacles the reaper gets a chance to come closer and closer ever time. A "game over" message is displayed in the middle of the screen if reaper was success full in snaching the player's soul. This is a infinite runner as the game becomes faster and faster at certain check points and a suprise in the end awaits.
+Portal Rush is played according to the following rules. The player can use they keys A and D or Left and Right Arrow Keys to move foward and backward. Players try to distance from the Reaper so you wont run into him and regret. If a player collides with the fire and lemon ball the reaper summons you lose 1 life of 3. A "game over" message is displayed in the middle of the screen if reaper was success full in snaching the player's soul basically you running out of lives. This is a infinite level game as the time is the score the longer you stay alive the higher the score becomes and totals out of the three lives you finish.
 
 ## Getting Started
 ---
@@ -11,7 +11,7 @@ python3 -m pip install raylib
 ```
 After you've installed the required libraries, open a terminal and browse to the project's root folder. Start the program by running the following command.
 ```
-python Portal Rush
+py portalrush or python3 portalrush
 ```
 
 ## Project Structure
@@ -19,31 +19,32 @@ python Portal Rush
 The project files and folders are organized as follows:
 ```
 root                   	                                  
-  +--README.md			                    
-  +--constants.py                       
+  +--README.md
+  +--portalrush              
+  +--assets                      
   +--game
-      +--actor.py                       
-      +--cast.py                                                
-      +--score.py                       
-      +--cycle.py                       
-      +--director.py          
-      +--action.py                  
-      +--control_actors_action.py   
-      +--draw_actors_action.py      
-      +--handle_collisions_action.py 
-      +--move_actors-action.py       
-      +--script.py                   
-      +--keyboard-services.py            
-      +--video-service.py           
-      +--color.py            
-      +--point.py 
-  +--__main__.py            
+      +--casting                       
+      +--directing                                               
+      +--scripting                      
+      +--services                       
+  +--__main__.py
+  +--constants.py            
 ```
 
 ## Required Software
 * Python 3.8.0 
 * Raylib Python CFFI 3.7
 
+
+## Screenshots
+
+[![Welcome-Screen.png](https://i.postimg.cc/nczL5vnk/Welcome-Screen.png)](https://postimg.cc/Yj5kLLGG)
+
+[![Launch-Screen.png](https://i.postimg.cc/j28S2j4P/Launch-Screen.png)](https://postimg.cc/WqkvfTK1)
+
+[![Game-Play-Screen.png](https://i.postimg.cc/HnWLTMXT/Game-Play-Screen.png)](https://postimg.cc/G8NRQHXf)
+
+[![Game-Over-Screen.png](https://i.postimg.cc/mZVD8dWk/Game-Over-Screen.png)](https://postimg.cc/rz0MpNm2)
 
 ## Authors & Contributions
 ---
