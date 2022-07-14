@@ -19,14 +19,14 @@ class RaylibAudioService(AudioService):
         pyray.init_audio_device()
         
     def load_sounds(self, directory):
-         """Loads sounds from the given directory."""
+        """Loads sounds from the given directory."""
         filepaths = self._get_filepaths(directory, [".wav", ".mp3", ".wma", ".aac"])
         for filepath in filepaths:
             sound = pyray.load_sound(filepath)
             self._sounds[filepath] = sound
 
     def play_sound(self, sound):
-         """Play sound from the given sound file."""
+        """Play sound from the given sound file."""
         filepath = sound.get_filename()
         # fixed os dependent filepath
         filepath = str(pathlib.Path(filepath))
@@ -36,7 +36,7 @@ class RaylibAudioService(AudioService):
         pyray.play_sound(sound)
     
     def release(self):
-         """Closes the Pyray Window for audio"""
+        """Closes the Pyray Window for audio"""
         pyray.close_audio_device()
         
     def unload_sounds(self):
