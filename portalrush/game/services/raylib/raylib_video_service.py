@@ -35,7 +35,7 @@ class RaylibVideoService(VideoService):
         rotation = image.get_rotation()
         tint = self._to_raylib_color(Color(255,255,255)) 
         pyray.draw_texture_ex(texture, raylib_position, rotation, scale, tint)
-         
+        
     def draw_rectangle(self, rectangle, color, filled = False):
         x = int(rectangle.get_position().get_x())
         y = int(rectangle.get_position().get_y())

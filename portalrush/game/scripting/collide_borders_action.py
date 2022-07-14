@@ -11,31 +11,50 @@ class CollideBordersAction(Action):
         
     def execute(self, cast, script, callback):
         ball = cast.get_first_actor(BALL_GROUP)
+        balls = cast.get_first_actor(BALLS_GROUP)
+
+        body1 = balls.get_body()
         body = ball.get_body()
         position = body.get_position()
+        position1 =body1.get_position()
         x = position.get_x()
         y = position.get_y()
+        x1 = position1.get_x()
+        y1 = position1.get_y()
         bounce_sound = Sound(BOUNCE_SOUND)
         over_sound = Sound(OVER_SOUND)
-                
+               
+               
+    #BALL ONE 
         if x < FIELD_LEFT:
             ball.bounce_x()
-            self._audio_service.play_sound(bounce_sound)
+           # self._audio_service.play_sound(bounce_sound)
 
         elif x >= (FIELD_RIGHT - BALL_WIDTH):
             ball.bounce_x()
-            self._audio_service.play_sound(bounce_sound)
+           # self._audio_service.play_sound(bounce_sound)
 
         if y < FIELD_TOP:
             ball.bounce_y()
-            self._audio_service.play_sound(bounce_sound)
+           # self._audio_service.play_sound(bounce_sound)
 
-        elif y >= (FIELD_BOTTOM - BALL_WIDTH):
-            stats = cast.get_first_actor(STATS_GROUP)
-            stats.lose_life()
+        elif y >= (FIELD_FLOOR - BALL_WIDTH):
+            ball.bounce_y()
             
-            if stats.get_lives() > 0:
-                callback.on_next(TRY_AGAIN) 
-            else:
-                callback.on_next(GAME_OVER)
-                self._audio_service.play_sound(over_sound)
+            
+    #BALL TWO
+        if x1 < FIELD_LEFT:
+            balls.bounce_x()
+            #self._audio_service.play_sound(bounce_sound)
+
+        elif x1 >= (FIELD_RIGHT - BALL_WIDTH):
+            balls.bounce_x()
+           # self._audio_service.play_sound(bounce_sound)
+
+        if y1 < FIELD_TOP:
+            balls.bounce_y()
+            #self._audio_service.play_sound(bounce_sound)
+
+        elif y1 >= (FIELD_FLOOR- BALL_WIDTH):
+            balls.bounce_y()
+

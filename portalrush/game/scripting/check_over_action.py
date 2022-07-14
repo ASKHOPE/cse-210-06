@@ -8,8 +8,8 @@ class CheckOverAction(Action):
         pass
         
     def execute(self, cast, script, callback):
-        bricks = cast.get_actors(BRICK_GROUP)
-        if len(bricks) == 0:
+        lives = cast.get_actors(STATS_GROUP)
+        if len(lives) == 0:
             stats = cast.get_first_actor(STATS_GROUP)
             stats.next_level()
-            callback.on_next(NEXT_LEVEL)
+            callback.on_next(NEW_GAME)
