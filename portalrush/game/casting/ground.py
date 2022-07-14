@@ -35,11 +35,12 @@ class Ground(Actor):
         """
         return self._body
 
-    def release(self):
-        """Release the ball in a random direction."""
-        # rn = random.uniform(0.9, 1.1)
-        # rn= 5
-        # vx = random.choice([-PLAYER_VELOCITY * rn, PLAYER_VELOCITY * rn])
-        # vy = -PLAYER_VELOCITY
-        velocity = Point(0, 0)  # vx =direction ,vy = Velocity ,x=15
-        self._body.set_velocity(velocity)
+    #FUTURE WORKINGS
+    # def release(self):
+    #     """Release the ball in a random direction."""
+    #     # rn = random.uniform(0.9, 1.1)
+    #     # rn= 5
+    #     # vx = random.choice([-PLAYER_VELOCITY * rn, PLAYER_VELOCITY * rn])
+    #     # vy = -PLAYER_VELOCITY
+    #     velocity = Point(0, 0)  # vx =direction ,vy = Velocity ,x=15
+    #     self._body.set_velocity(velocity)

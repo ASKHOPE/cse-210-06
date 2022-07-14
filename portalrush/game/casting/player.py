@@ -25,12 +25,12 @@ class Player(Actor):
         """
         return self._body
     
-    # def move_next(self):
-    #     """Moves the bat using its velocity."""
-    #     position = self._body.get_position()
-    #     velocity = self._body.get_velocity()
-    #     new_position = position.add(velocity)
-    #     self._body.set_position(new_position)
+    def move_next(self):
+        """Moves the bat using its velocity."""
+        position = self._body.get_position()
+        velocity = self._body.get_velocity()
+        new_position = position.add(velocity)
+        self._body.set_position(new_position)
 
     def swing_left(self):
         """Runs Back """

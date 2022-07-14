@@ -19,6 +19,11 @@ class Reaper(Actor):
         return self._body
     
     def get_image(self):
+        """Gets the images that make up the animation.
+
+        Returns:
+            A list of strings containing the image names.
+        """
         return self._image
 
     def swing_right(self):
