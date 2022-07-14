@@ -28,18 +28,18 @@ FIELD_LEFT = 0
 FIELD_RIGHT = SCREEN_WIDTH
 
 # FONT
-FONT_FILE = "batter/assets/fonts/zorque.otf"
+FONT_FILE = "portalrush/assets/fonts/zorque.otf"
 FONT_SMALL = 32
 FONT_LARGE = 48
 
 # SOUND
-BOUNCE_SOUND = "batter/assets/sounds/boing.wav"
-WELCOME_SOUND = "batter/assets/sounds/intro.mp3"
-OVER_SOUND = "batter/assets/sounds/over.wav"
-OUCH_SOUND = "batter/assets/sounds/ouch.mp3"
-OHNO_SOUND = "batter/assets/sounds/ohno.mp3"
-BONK_SOUND = "batter/assets/sounds/bonk.mp3"
-#WELCOME_SOUND = "batter/assets/sounds/retro.mp3"
+BOUNCE_SOUND = "portalrush/assets/sounds/boing.wav"
+WELCOME_SOUND = "portalrush/assets/sounds/intro.mp3"
+OVER_SOUND = "portalrush/assets/sounds/over.wav"
+OUCH_SOUND = "portalrush/assets/sounds/ouch.mp3"
+OHNO_SOUND = "portalrush/assets/sounds/ohno.mp3"
+BONK_SOUND = "portalrush/assets/sounds/bonk.mp3"
+#WELCOME_SOUND = "portalrush/assets/sounds/retro.mp3"
 
 
 # TEXT
@@ -70,7 +70,7 @@ IN_PLAY = 3
 GAME_OVER = 4
 
 # LEVELS
-LEVEL_FILE = "batter/assets/data/level-{:03}.txt"
+LEVEL_FILE = "portalrush/assets/data/level-{:03}.txt"
 BASE_LEVELS = 5
 
 # -------------------------------------------------------------------------------------------------- 
@@ -106,27 +106,27 @@ SCORE_FORMAT = "SCORE: {}"
 
 # BALLS
 BALLS_GROUP = "balls"
-BALLS_IMAGE = "batter/assets/images/0000.png"
+BALLS_IMAGE = "portalrush/assets/images/0000.png"
 BALLS_WIDTH = 18
 BALLS_HEIGHT = 18
 BALLS_VELOCITY = 6
 
 # BALL
 BALL_GROUP = "ball"
-BALL_IMAGE = "batter/assets/images/000.png"
+BALL_IMAGE = "portalrush/assets/images/000.png"
 BALL_WIDTH = 18
 BALL_HEIGHT = 18
 BALL_VELOCITY = 10
 
 #Background 
 BACKGROUND_GROUP = "background"
-BACKGROUND_IMAGE = "batter/assets/images/background.png"
+BACKGROUND_IMAGE = "portalrush/assets/images/background.png"
 BACKGROUND_WIDTH = 1000
 BACKGROUND_HEIGHT = 500
 
 # Player
 PLAYER_GROUP = "player"
-PLAYER_IMAGE = "batter/assets/images/player.png"
+PLAYER_IMAGE = "portalrush/assets/images/player.png"
 PLAYER_WIDTH = 68
 PLAYER_HEIGHT = 100
 PLAYER_RATE = 60
@@ -135,14 +135,14 @@ PLAYER_VELOCITY = 6
 
 #Reaper 
 REAPER_GROUP = "reaper"
-REAPER_IMAGE = "batter/assets/images/reaper.png"
+REAPER_IMAGE = "portalrush/assets/images/reaper.png"
 REAPER_WIDTH = 165
 REAPER_HEIGHT = 190
 REAPER_VELOCITY = 8
 
 #Floor
 GROUND_GROUP = "ground"
-GROUND_IMAGE = "batter/assets/images/ground.png"
+GROUND_IMAGE = "portalrush/assets/images/ground.png"
 GROUND_WIDTH = 50
 GROUND_HEIGHT = 100
 GROUND_VELOCITY = 6

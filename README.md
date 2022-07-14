@@ -45,8 +45,6 @@ root
 * Raylib Python CFFI 3.7
 
 
-
-
 ## Authors & Contributions
 ---
 * Arnold Sujan Katru (kat21015@byui.edu)- Game Play / Scripts
